@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Calcula el coste por persona del trayecto.">
+    <link rel="icon" type="image/png" href="gas.png"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GASOFA-CALC // ⛽ - 🧮</title>
+    <link rel="stylesheet" href="estilo.css">
+    <script src="script.js"></script> 
+</head>
+<body>
+    <h1>GASOFA-CALC <br> ⛽ - 🧮</h1>
+    <div id="wrapper">
+        <div id="entrada">
+            <form>
+                <p>
+                    <label for="km_recorridos">KM recorridos:</label>
+                    <input type="number" name="km_recorridos" id="km_recorridos" placeholder="Ejemplo: 400" tabindex="1" required step="0.01"> <br/>
+                </p>
+                <p>
+                    <label for="consumo_medio">Consumo medio:</label>
+                    <input type="number" name="consumo_medio" id="consumo_medio" placeholder="Ejemplo: 6,2" tabindex="2" required step="0.01"> <br/>
+                </p>
+                <p>
+                    <label for="precio_gas">Precio combustible:</label>
+                    <input type="number" name="precio_gas" id="precio_gas" placeholder="Ejemplo: 1,897" tabindex="3" required step="0.001"> <br/>
+                </p>
+                <p>
+                    <label for="ocupantes">Número ocupantes:</label>
+                    <input type="number" name="ocupantes" id="ocupantes" placeholder="Ejemplo: 4" tabindex="4" required>
+                </p>
+                <br/><br/>
+                <input type="button" value="Calcular" tabindex="5" id="button_calcula" >
+                <!--<input type="button" value="Ayuda" tabindex="6" id="button_ayuda"> -->
+                <input type="button" value="Compartir" tabindex="6" id="button_share"> 
+
+            </form>
+        </div>
+        <div id="resultado">
+            <h1> <span id="text_resultado"> ¿? </span> <span style="font-size: smaller;"> €/persona</span></h1>
+        </div>
+        <div id="resultado"></div>
+    </div>
+</body>
+</html>
